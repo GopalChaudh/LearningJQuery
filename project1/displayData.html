@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>???? ????????? ?????? ?? </h1>
+    <h2>@@@@@@@@ @@@@@@ @@@@</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt facere molestiae<b> Gopal </b> debitis, rem aliquid expedita doloribus cum repellat nam quos non illum adipisci iste dolorum, eos deleniti? Possimus, aperiam porro!</p>
+
+
+    <script>
+        $(document).ready(function(){
+        //   $("h1").text("<p> hi my name is Gopal </p>")
+        //   $("h1").html("<p> hi my name is Gopal </p>")
+        let flag = true;
+        $('h1').click(function(){
+            if(flag){
+
+                $('h1').text($('p').text());
+                flag =false;
+            }else{
+                $('h1').text("??? ????????? ?????? ??");
+                flag = true;
+
+            }
+        })
+
+
+        })
+
+    </script>
+</body>
+</html>

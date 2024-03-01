@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgContainer {
+            width: 400px;
+            height: 400px;
+        }
+
+        .imgContainer img {
+            height: 100%;
+
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Display a Image</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore id tempore consectetur cum culpa similique
+        cumque voluptas vel, eveniet esse error repellat voluptates soluta officiis temporibus ipsum nisi! Deserunt?</p>
+    <div class="imgContainer">
+        <img src="https://imgs.search.brave.com/bmtTq1At4l6dlutR69RI29V-3zxj9TN4YZeb9WIxlBA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9nZXRp/bWcuYWkvX25leHQv/aW1hZ2U_dXJsPWh0/dHBzOi8vaW1nLmdl/dGltZy5haS9nZW5l/cmF0ZWQvaW1nLXNy/QWpIRDA5UkZDcVJJ/QmRMR1lQSjguanBl/ZyZ3PTE5MjAmcT03/NQ"
+            alt="" srcset="">
+    </div>
+    <br><br><br><br>
+    <center>
+
+        <button id="b1">h-TEXT</button>
+        <button id="b2">p-TEXT</button>
+        <button id="b3">Img-SRC</button>
+        <button id="b4">IMG-HTML</button>
+    </center>
+    <section>
+        Nothing Now ! 
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            // hadding text
+            $('#b1').click(function () {
+                $('section').text($('h1').text());
+            })
+            // paragraph text
+            $('#b2').click(function () {
+                $('section').text($('p').text());
+            })
+            // Image src
+            $('#b3').click(function () {
+                $('section').text($('img').attr("src"));
+              })
+              // image HTMl
+            $('#b4').click(function () {
+                $('section').text($('.imgContainer').text());
+              })
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>
